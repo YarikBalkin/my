@@ -7,25 +7,6 @@ function ex1(arr){
 }
 return temp
 }
-function ex2(){
-    temp = "wdhyja";
-    let my;
-    let k = 0;
-    for(let i = 0;i<temp.length-1;i++){
-        for(let j = i+1;i<temp.length;j++){
-            if (temp[i] == temp[j])
-                k++;
-        }
-        if (k == 0){
-            my = temp [i];
-            break;
-        }
-        else
-            k = 0;
-    }
-    return my;
-    //console.log(k);
-}
 
 function ex3(num){
     let arr = [];
@@ -80,25 +61,3 @@ function ex2_new(word){
 }
 return word[count];
 }
-
-ex5();
-//let word = "yryeewqoijrqw";
-//console.log(ex2_new());
-
-//s = "Fred:Corwill;Wilfred:Corwil;Barney:Tornbull;Betty:Tornubull;Bjon:Tornobull;Raphael:Cornwill;Alfred:Corwill";
-//console.log(s);
-//s.toUpperCase();
-//let a = s.split(';');
-//console.log(a[5]);
-//let array = [1,3,6,2,2,0,4,5];
-//console.log(ex4(array));
-
-//let c = 98675213;
-//console.log("sum = " + ex3(c))
-
-//let a = [1 , 3 , "three", "for", 5, "six"];
-//console.log(ex1(a))
-//let b = "hheellot"
-//console.log(b.indexOf(b[2]));
-//console.log(ex2())
-
