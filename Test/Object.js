@@ -1,4 +1,4 @@
-const Рage = require("./Paje") 
+const Рage = require("./Page") 
 
 class Object extends Page{
     Main_Page_URL = "https://www.epam.com/"
