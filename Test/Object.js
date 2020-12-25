@@ -18,41 +18,50 @@ class Object extends Page{
         super(webdriver,driver,timeout);
     }
     async test1(){
+        //проверка работы поисковой строки
         await this.get(this.Main_Page_URL);
         await this.clickByXPath(this.Search_Button);
         await this.insert(this.Search_Bar,"C++")
     }
+    
     async test2(){
+        //Проверка работы кнопки контакты
         await this.get(this.Main_Page_URL);
         await this.clickByXPath(this.ContactUs_Button);
         await this.getCurrentUrl();
     }
     async test3(){
+        //проверка работы кнопки "Главная страница"
         await this.get(this.Main_Page_URL);
         await this.clickByXPath(this.Logo_Button);
         await this.getCurrentUrl();
     }
     async test4(){
+        //проверка работы ссылки на LinkedIN
         await this.get(this.Main_Page_URL);
         await this.clickByXPath(this.LinkedIn_Button);
         await this.getCurrentUrl();
     }
     async test5(){
+        //проверка работы меню
         await this.get(this.Main_Page_URL);
         await this.clickByXPath(this.Menu_Button);
         await this.clickByXPath(this.Menu_Search);
     }
     async test6(){
+        //Проверка работы языкового меню
         await this.get(this.Main_Page_URL);
         await this.clickByXPath(this.Language_Button);
         await this.clickByXPath(this.Another_Language_Button);
     }
     async test7(){
+        //проверка работы вкладки "consult"
         await this.get(this.Main_Page_URL);
         await this.clickByXPath(this.Consult_Button);
         await this.getCurrentUrl();
     }
     async test8(){
+        //Проверка работы "EPUM continuum"
         await this.get(this.Main_Page_URL);
         await this.clickByXPath(this.EPUM_Continuum_Button);
         await this.getCurrentUrl();
